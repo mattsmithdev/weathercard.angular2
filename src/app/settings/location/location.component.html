@@ -1,0 +1,7 @@
+<div class="input-group">
+	<span class="input-group-addon">
+	<i class="material-icons">place</i>
+</span>
+	<ng2-completer [(ngModel)]="searchStr" [dataService]="dataService" [minSearchLength]="3" [placeholder]="'Enter a cityname'" (selected)="onLocationSelected($event)"></ng2-completer>
+	<span class="input-group-addon"><a class="text-muted" href="#" data-toggle="modal" data-target="#myModal"><i class="material-icons">settings</i></a></span>
+</div>

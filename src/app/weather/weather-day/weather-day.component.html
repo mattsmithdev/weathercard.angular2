@@ -1,0 +1,51 @@
+<div class="card card-nav-tabs">
+  <div class="header header-default">
+    <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+    <div class="nav-tabs-navigation">
+      <div class="nav-tabs-wrapper">
+        <div class="col-sm-offset-1">
+
+          <ul class="nav nav-tabs" data-tabs="tabs">
+            <li [class.active]="isFirst" *ngFor="let day of weather.weatherDays; let isFirst = first; let i = index;">
+              <a href="#day{{i}}" data-toggle="tab" aria-expanded="true" class="text-center">		
+                {{day.dayName}}<br />
+                <strong>{{day.dayNumber}}</strong><br />
+                <i class="wi {{day.weatherIconName}}"></i> {{day.temperature | scale:settings.scale}}°{{getScale()}}
+                <div class="ripple-container"></div>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="tab-content text-center">
+      <div class="tab-pane active" [class.active]="isFirst" id="day{{i}}" *ngFor="let day of weather.weatherDays; let isFirst = first; let i = index;">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Time</th>
+              <th class="text-center">Temp</th>
+              <th class="text-center">Humidity</th>
+              <th class="text-center">Conditions</th>
+              <th class="text-center">Precip</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let hourly of day.weatherHourly">
+              <td>{{hourly.hour | date:'h'}}</td>
+              <td>{{hourly.temperature | scale:settings.scale}}°{{getScale()}}</td>
+              <td>{{hourly.humidity}}%</td>
+              <td>{{hourly.description}}</td>
+              <td>{{hourly.precip}}%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>

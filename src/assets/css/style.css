@@ -1,0 +1,17 @@
+.card .header-default {
+  background: linear-gradient(60deg, #727272, #999999);
+}
+
+.panel-default > .panel-body {
+	background: rgba(114, 114, 114, .5);
+	color:#fff;
+}
+
+.temp-large {
+	font-size:6em;
+	font-weight:bold;
+}
+
+.temp-large-text {
+	font-size:36px;
+}

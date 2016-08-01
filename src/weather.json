@@ -1,0 +1,221 @@
+{
+  "weatherCurrent": {
+    "temperature": 89,
+    "weatherIcon": "wi-day-sunny",
+    "description": "Partly Cloudy",
+    "scale": "F",
+    "currentTime": "2016-07-30T00:33:44.268Z",
+    "humidity": 75,
+    "dewPoint": 55,
+    "wind": "4mph W",
+    "precip": 0
+  },
+  "weatherDays": [
+    {
+      "day": "2016-07-30T00:33:44.268Z",
+      "dayNumber": 1,
+      "dayName": "Friday",
+      "weatherIconName": "wi-day-sunny",
+      "temperature": 90,
+      "scale": "F",
+      "weatherHourly": [
+        {
+          "hour": "2016-07-30T00:33:44.268Z",
+          "temperature": 90,
+          "scale": "F",
+          "humidity": 75,
+          "description": "Partly Cloudy",
+          "precip": 0
+        },
+        {
+          "hour": "2016-07-30T00:33:44.268Z",
+          "temperature": 90,
+          "scale": "F",
+          "humidity": 75,
+          "description": "Partly Cloudy",
+          "precip": 0
+        }
+      ]
+    },
+    {
+      "day": "2016-07-30T00:33:44.268Z",
+      "dayNumber": 2,
+      "dayName": "Friday",
+      "weatherIconName": "wi-day-sunny",
+      "temperature": 92,
+      "scale": "F",
+      "weatherHourly": [
+        {
+          "hour": "2016-07-30T00:33:44.268Z",
+          "temperature": 90,
+          "scale": "F",
+          "humidity": 75,
+          "description": "Partly Cloudy",
+          "precip": 0
+        },
+        {
+          "hour": "2016-07-30T00:33:44.268Z",
+          "temperature": 90,
+          "scale": "F",
+          "humidity": 75,
+          "description": "Partly Cloudy",
+          "precip": 0
+        },
+        {
+          "hour": "2016-07-30T00:33:44.268Z",
+          "temperature": 90,
+          "scale": "F",
+          "humidity": 75,
+          "description": "Partly Cloudy",
+          "precip": 0
+        }
+      ]
+    },
+    {
+      "day": "2016-07-30T00:33:44.268Z",
+      "dayNumber": 3,
+      "dayName": "Friday",
+      "weatherIconName": "wi-day-sunny",
+      "temperature": 92,
+      "scale": "F",
+      "weatherHourly": [
+        {
+          "hour": "2016-07-30T00:33:44.268Z",
+          "temperature": 90,
+          "scale": "F",
+          "humidity": 75,
+          "description": "Partly Cloudy",
+          "precip": 0
+        },
+        {
+          "hour": "2016-07-30T00:33:44.268Z",
+          "temperature": 90,
+          "scale": "F",
+          "humidity": 75,
+          "description": "Partly Cloudy",
+          "precip": 0
+        },
+        {
+          "hour": "2016-07-30T00:33:44.268Z",
+          "temperature": 90,
+          "scale": "F",
+          "humidity": 75,
+          "description": "Partly Cloudy",
+          "precip": 0
+        },
+        {
+          "hour": "2016-07-30T00:33:44.268Z",
+          "temperature": 90,
+          "scale": "F",
+          "humidity": 75,
+          "description": "Partly Cloudy",
+          "precip": 0
+        }
+      ]
+    },
+    {
+      "day": "2016-07-30T00:33:44.268Z",
+      "dayNumber": 4,
+      "dayName": "Friday",
+      "weatherIconName": "wi-day-sunny",
+      "temperature": 92,
+      "scale": "F",
+      "weatherHourly": [
+        {
+          "hour": "2016-07-30T00:33:44.268Z",
+          "temperature": 90,
+          "scale": "F",
+          "humidity": 75,
+          "description": "Partly Cloudy",
+          "precip": 0
+        },
+        {
+          "hour": "2016-07-30T00:33:44.268Z",
+          "temperature": 90,
+          "scale": "F",
+          "humidity": 75,
+          "description": "Partly Cloudy",
+          "precip": 0
+        }
+      ]
+    },
+    {
+      "day": "2016-07-30T00:33:44.268Z",
+      "dayNumber": 5,
+      "dayName": "Friday",
+      "weatherIconName": "wi-day-sunny",
+      "temperature": 92,
+      "scale": "F",
+      "weatherHourly": [
+        {
+          "hour": "2016-07-30T00:33:44.268Z",
+          "temperature": 90,
+          "scale": "F",
+          "humidity": 75,
+          "description": "Partly Cloudy",
+          "precip": 0
+        },
+        {
+          "hour": "2016-07-30T00:33:44.268Z",
+          "temperature": 90,
+          "scale": "F",
+          "humidity": 75,
+          "description": "Partly Cloudy",
+          "precip": 0
+        }
+      ]
+    },
+    {
+      "day": "2016-07-30T00:33:44.268Z",
+      "dayNumber": 6,
+      "dayName": "Friday",
+      "weatherIconName": "wi-day-sunny",
+      "temperature": 92,
+      "scale": "F",
+      "weatherHourly": [
+        {
+          "hour": "2016-07-30T00:33:44.268Z",
+          "temperature": 90,
+          "scale": "F",
+          "humidity": 75,
+          "description": "Partly Cloudy",
+          "precip": 0
+        },
+        {
+          "hour": "2016-07-30T00:33:44.268Z",
+          "temperature": 90,
+          "scale": "F",
+          "humidity": 75,
+          "description": "Partly Cloudy",
+          "precip": 0
+        }
+      ]
+    },
+    {
+      "day": "2016-07-30T00:33:44.268Z",
+      "dayNumber": 7,
+      "dayName": "Friday",
+      "weatherIconName": "wi-day-sunny",
+      "temperature": 92,
+      "scale": "F",
+      "weatherHourly": [
+        {
+          "hour": "2016-07-30T00:33:44.268Z",
+          "temperature": 90,
+          "scale": "F",
+          "humidity": 75,
+          "description": "Partly Cloudy",
+          "precip": 0
+        },
+        {
+          "hour": "2016-07-30T00:33:44.268Z",
+          "temperature": 90,
+          "scale": "F",
+          "humidity": 75,
+          "description": "Partly Cloudy",
+          "precip": 0
+        }
+      ]
+    }
+  ]
+}

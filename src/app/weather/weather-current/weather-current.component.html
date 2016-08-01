@@ -1,0 +1,36 @@
+<div class="col-sm-4">
+  <h1 class="temp-large">{{weather.weatherCurrent.temperature | scale:settings.scale}}°<small>{{getScale()}}</small></h1>
+</div>
+<div class="col-sm-8">
+  <div class="row">
+    <p><span class="temp-large-text"><i class="text-warning wi {{ weather.weatherCurrent.weatherIcon}}"></i> {{weather.weatherCurrent.description}}</span><br>{{weather.weatherCurrent.currentTime | date:'medium' }}</p>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 text-right">
+      Humidity:
+    </div>
+    <div class="col-sm-3">
+      {{weather.weatherCurrent.humidity}}%
+    </div>
+    <div class="col-sm-3 text-right">
+      Winds:
+    </div>
+    <div class="col-sm-3">
+      {{weather.weatherCurrent.wind}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 text-right">
+      Dew Point:
+    </div>
+    <div class="col-sm-3">
+      {{weather.weatherCurrent.dewPoint | scale:settings.scale}}°{{getScale()}}
+    </div>
+    <div class="col-sm-3 text-right">
+      Precip:
+    </div>
+    <div class="col-sm-3">
+      {{weather.weatherCurrent.precip}}%
+    </div>
+  </div>
+</div>
