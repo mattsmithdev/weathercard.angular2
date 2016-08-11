@@ -9,12 +9,16 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
-  'ng2-completer': 'vendor/ng2-completer/bundles'
+  'ng2-completer': 'vendor/ng2-completer/bundles',
+  'moment': 'vendor/moment/min',
+  'angular2-moment': 'vendor/angular2-moment'
 };
 
 /** User packages configuration. */
 const packages: any = {
-  'ng2-completer': { main: 'ng2-completer.js', format: 'cjs' }
+  'ng2-completer': { main: 'ng2-completer.js', format: 'cjs' },
+  'moment' : { main: 'moment.min.js', defaultExtension: 'js' },
+  'angular2-moment' : { main: 'index.js', defaultExtension: 'js' }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////

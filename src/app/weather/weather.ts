@@ -1,15 +1,16 @@
+import { Iweather } from './iweather';
+import { IweatherCurrent } from './weather-current/iweather-current';
 import { WeatherCurrent } from './weather-current/weather-current';
-import { WeatherDay } from './weather-day/weather-day';
+import { IweatherDay } from './weather-day/iweather-day';
 
-export class Weather {
+export class Weather implements Iweather {
 
-    weatherCurrent: WeatherCurrent;
-    weatherDays: WeatherDay[];
+    weatherCurrent: IweatherCurrent;
+    weatherDays: IweatherDay[];
 
     constructor() {
         this.weatherCurrent = new WeatherCurrent();
         this.weatherDays = [];
     }
-
 
 }

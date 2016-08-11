@@ -1,3 +1,3 @@
 export enum WeatherProvider {
-    ForecastIo, WeatherUnderground, Yahoo
+    ForecastIo, WeatherUnderground
 }

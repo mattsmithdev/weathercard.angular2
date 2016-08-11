@@ -18,7 +18,9 @@ module.exports = function(defaults) {
       '@angular/**/*.+(js|js.map)',
       'jquery/dist/jquery.+(min.js|min.map)',
       'bootstrap/dist/**',
-      'ng2-completer/bundles/*.+(js|js.map)'
+      'ng2-completer/bundles/*.+(js|js.map)',
+      'moment/min/*.+(js)',
+      'angular2-moment/*.+(js|js.map)'
     ]
   });
 };

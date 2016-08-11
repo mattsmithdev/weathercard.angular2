@@ -1,10 +1,11 @@
+import { IweatherHourly } from './iweather-hourly';
 import { Scale } from '../../shared/scale.enum';
 
-export class WeatherHourly {
-    hour: Date;
+export class WeatherHourly implements IweatherHourly {
+    epoch: Date;
     temperature: number;
     scale: Scale;
-    humidity: number;
+    humidity: string;
     description: string;
-    precip: number;
+    precipPercent: string;
 }

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Isettings } from './isettings';
 import { Settings } from './settings';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
