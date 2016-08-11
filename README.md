@@ -1,2 +1,4 @@
 # weathercard
-Weather demo written in Angular2 and backend asp.net web api
+Angular2 portion of weather demo app
+
+![Screenshot](/WeatherCard.png?raw=true "WeatherCard Screenshot")
