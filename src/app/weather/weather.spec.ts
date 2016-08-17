@@ -1,5 +1,6 @@
 /* tslint:disable:no-unused-variable */
 
+/*
 import { addProviders, async, inject } from '@angular/core/testing';
 import {Weather} from './weather';
 
@@ -8,3 +9,4 @@ describe('Weather', () => {
     expect(new Weather()).toBeTruthy();
   });
 });
+*/

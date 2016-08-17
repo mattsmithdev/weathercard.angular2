@@ -6,7 +6,7 @@ import { Ilocation } from './ilocation';
 @Injectable()
 export class LocationService {
 
-  private _locationUrl = 'http://localhost:56317/api/locations';
+  private _locationUrl = 'http://localhost/api/locations';
 
   constructor(private _http: Http) { }
 

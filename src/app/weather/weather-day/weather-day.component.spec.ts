@@ -10,9 +10,7 @@ import { Weather } from '../weather';
 import { Http, HTTP_PROVIDERS, ConnectionBackend, BrowserXhr } from '@angular/http';
 
 import {
-  beforeEach, beforeEachProviders,
-  describe, xdescribe,
-  expect, it, xit,
+  addProviders,
   async, inject,
   TestComponentBuilder
 } from '@angular/core/testing';
@@ -26,13 +24,6 @@ describe('Component: WeatherDay', () => {
   let settingsService;
   let currentLocationService;
   let location;
-
-  beforeEachProviders(() => [
-    HTTP_PROVIDERS,
-    ConnectionBackend,
-    Http,
-    WeatherService, SettingsService, CurrentLocationService, Location
-  ]);
 
   beforeEach(inject([TestComponentBuilder, HTTP_PROVIDERS, ConnectionBackend,
     Http, WeatherService, SettingsService, CurrentLocationService, Location], (tcb, hp, cb, h, ws, ss, cls, l) => {

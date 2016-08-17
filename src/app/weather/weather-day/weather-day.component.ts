@@ -50,7 +50,7 @@ export class WeatherDayComponent implements OnInit {
           error => this.errorMessage = <any>error);
       });
 
-    this._weatherService.getWeather()
+    this._weatherService.getLatestWeather(this._location, this.settings)
       .subscribe(
       weather => {
         this.weather = weather;

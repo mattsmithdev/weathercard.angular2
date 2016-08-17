@@ -13,9 +13,7 @@ import { CurrentLocationService } from '../../settings/location/current-location
 import { Http, HTTP_PROVIDERS, ConnectionBackend, BrowserXhr } from '@angular/http';
 
 import {
-  beforeEach, beforeEachProviders,
-  describe, xdescribe,
-  expect, it, xit,
+  addProviders,
   async, inject,
   TestComponentBuilder
 } from '@angular/core/testing';
@@ -31,12 +29,6 @@ describe('Component: WeatherCurrent', () => {
   let testComponentBuilder;
   let weather;
 
-  beforeEachProviders(() => [
-    HTTP_PROVIDERS,
-    ConnectionBackend,
-    Http,
-    WeatherService, SettingsService, CurrentLocationService, Location
-  ]);
 
   beforeEach(inject([TestComponentBuilder, HTTP_PROVIDERS, ConnectionBackend,
     Http, WeatherService, SettingsService, CurrentLocationService, Location], (tcb, hp, cb, h, ws, ss, cls, l) => {

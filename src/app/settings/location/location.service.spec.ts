@@ -1,13 +1,10 @@
 /* tslint:disable:no-unused-variable */
 
-import { addProviders } from '@angular/core/testing';
 import { LocationService } from './location.service';
 import { Http, HTTP_PROVIDERS, ConnectionBackend, BrowserXhr } from '@angular/http';
 
 import {
-  beforeEach, beforeEachProviders,
-  describe, xdescribe,
-  expect, it, xit,
+  addProviders,
   async, inject,
   TestComponentBuilder
 } from '@angular/core/testing';
@@ -17,12 +14,6 @@ describe('Service: Location', () => {
   let locationService;
   let httpProviders;
   let connectionBackend;
-
-  beforeEachProviders(() => [
-    HTTP_PROVIDERS,
-    ConnectionBackend,
-    LocationService, Http
-  ]);
 
   beforeEach(inject([HTTP_PROVIDERS, ConnectionBackend, LocationService, Http], (hp, cb, ls, h) => {
     httpProviders = hp;

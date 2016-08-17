@@ -8,9 +8,6 @@ import { LocationService } from './settings/location/location.service';
 import { Http, HTTP_PROVIDERS, ConnectionBackend } from '@angular/http';
 
 import {
-  beforeEach, beforeEachProviders,
-  describe, xdescribe,
-  expect, it, xit,
   async, inject,
   TestComponentBuilder
 } from '@angular/core/testing';
@@ -24,12 +21,6 @@ describe('App: WeatherCard', () => {
   let locationService;
   let weatherService;
 
-  beforeEachProviders(() => [
-    HTTP_PROVIDERS,
-    ConnectionBackend,
-    Http,
-    SettingsService, LocationService, WeatherService
-  ]);
 
   beforeEach(inject([TestComponentBuilder, HTTP_PROVIDERS, ConnectionBackend,
     Http, SettingsService, LocationService, WeatherService], (tcb, hp, cb, h, ss, ls, ws) => {

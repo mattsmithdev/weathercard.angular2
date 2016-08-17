@@ -1,6 +1,5 @@
 /* tslint:disable:no-unused-variable */
 
-import { addProviders } from '@angular/core/testing';
 import { WeatherService } from './weather.service';
 import { Weather } from './weather';
 import { WeatherCurrent } from './weather-current/weather-current';
@@ -9,11 +8,9 @@ import { Observable, BehaviorSubject } from 'rxjs/Rx';
 import { Http, HTTP_PROVIDERS, ConnectionBackend, BrowserXhr, XHRBackend,
   BaseRequestOptions, Response, ResponseOptions } from '@angular/http';
 import {MockBackend} from '@angular/http/testing';
-import {Injector, provide, } from '@angular/core';
+import {DebugElement } from '@angular/core';
 import {
-  beforeEach, beforeEachProviders,
-  describe, xdescribe,
-  expect, it, xit,
+  addProviders,
   async, inject,
   TestComponentBuilder
 } from '@angular/core/testing';
@@ -28,18 +25,6 @@ describe('Service: Weather', () => {
   let weatherService;
   let mockbackend;
 
-  beforeEachProviders(() => [
-    HTTP_PROVIDERS,
-    ConnectionBackend,
-    BrowserXhr,
-    XHRBackend,
-    WeatherService, Settings, Http,
-    BaseRequestOptions,
-    MockBackend,
-    provide(Http, {
-      useFactory: (backend, options) => new Http(backend, options),
-      deps: [MockBackend, BaseRequestOptions]})
-  ]);
 
   beforeEach(inject([MockBackend, HTTP_PROVIDERS, ConnectionBackend, BrowserXhr, XHRBackend,
   Settings, WeatherService, Http], (mb, hp, cb, bx, xb, s, ws, h) => {

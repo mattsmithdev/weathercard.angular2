@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {CompleterCmp, CompleterService, RemoteData, COMPLETER_DATA_PROVIDERS, CompleterItem} from 'ng2-completer';
+import {CompleterService, RemoteData, COMPLETER_DATA_PROVIDERS, CompleterItem} from 'ng2-completer';
 import { LocationService } from './location.service';
 import { CurrentLocationService } from './current-location.service';
 import { Location } from './location';
@@ -10,7 +10,6 @@ import { TrimPipe } from './trim.pipe';
   selector: 'app-location',
   templateUrl: 'location.component.html',
   styleUrls: ['location.component.css'],
-  directives: [CompleterCmp],
   providers: [COMPLETER_DATA_PROVIDERS, CompleterService],
   pipes: [TrimPipe]
 })

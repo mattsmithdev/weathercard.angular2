@@ -9,9 +9,7 @@ import { WeatherService } from '../weather/weather.service';
 import { Http, HTTP_PROVIDERS, ConnectionBackend, BrowserXhr } from '@angular/http';
 
 import {
-  beforeEach, beforeEachProviders,
-  describe, xdescribe,
-  expect, it, xit,
+  addProviders,
   async, inject,
   TestComponentBuilder
 } from '@angular/core/testing';
@@ -24,14 +22,6 @@ describe('Component: Settings', () => {
   let weatherService;
   let testComponentBuilder;
   let settings;
-
-  beforeEachProviders(() => [
-    HTTP_PROVIDERS,
-    ConnectionBackend,
-    Http,
-    BrowserXhr,
-    SettingsService, WeatherService, Settings
-  ]);
 
   beforeEach(inject([TestComponentBuilder, HTTP_PROVIDERS, ConnectionBackend,
     Http, SettingsService, WeatherService, Settings], (tcb, hp, cb, h, ss, ws, s) => {
